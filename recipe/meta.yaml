@@ -1,5 +1,5 @@
 {% set name = "ppmac" %}
-{% set version = "0.1" %}
+{% set version = "0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/NSLS-II-HXN/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 766b8a579b0d56bbe68f0944780ec4a71ddbcdd859c963c565aaeee2d951dd94
+  sha256: f3b1c89a4344c7063524f4d8e04b4c46bbebd02692236351190549a434dfe32b
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
